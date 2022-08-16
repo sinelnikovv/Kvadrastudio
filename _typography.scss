@@ -1,0 +1,124 @@
+html {
+  font-size: 16px;
+  @media screen and (min-width: 767px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 20px;
+  }
+}
+
+$font: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial,
+  sans-serif;
+
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+
+@mixin font(
+  $fz,
+  $fz-tablet,
+  $fz-desktop,
+  $lh,
+  $lh-tablet,
+  $lh-desktop,
+  $fw,
+  $fw-tablet,
+  $fw-desktop
+) {
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  @media screen and (min-width: 768px) {
+    font-size: $fz-tablet;
+    line-height: $lh-tablet;
+    font-weight: $fw-tablet;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: $fz-desktop;
+    line-height: $lh-desktop;
+    font-weight: $fw-desktop;
+  }
+}
+
+* {
+  font-family: $font;
+  color: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+p,
+.p {
+  @include font(16px, 18px, 20px, 1.6, 1.6, 1.6, 400, 400, 400);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.h1,
+h1 {
+  @include font(38px, 60px, 80px, 1.2, 1.2, 1.2, 400, 400, 400);
+  margin: 0;
+  padding: 0;
+}
+
+.h2,
+h2 {
+  @include font(62px, 36px, 60px, 1.2, 1.2, 1.2, 400, 400, 400);
+  margin: 0;
+  padding: 0;
+}
+
+.h3,
+h3 {
+  @include font(32px, 48px, 80px, 1.2, 1.2, 1.2, 400, 400, 400);
+  margin: 0;
+  padding: 0;
+}
+
+.h4,
+h4 {
+  @include font(14px, 18px, 28px, 1.5, 1.5, 1.5, 400, 400, 400);
+  margin: 0;
+  padding: 0;
+}
+
+.h5,
+h5 {
+  @include font(14px, 16px, 18px, 1.33, 1.33, 1.33, 700, 700, 700);
+  margin: 0;
+  padding: 0;
+}
+
+.h6,
+h6 {
+  @include font(12px, 12px, 12px, 1.67, 1.67, 1.67, 400, 400, 400);
+  margin: 0;
+  padding: 0;
+}
