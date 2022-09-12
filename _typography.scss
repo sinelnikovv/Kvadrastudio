@@ -68,7 +68,6 @@ $font: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial,
 
 * {
   font-family: $font;
-  color: var(--primary-text-color);
   margin: 0;
   padding: 0;
 }
@@ -76,28 +75,47 @@ $font: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial,
 p,
 .p {
   @include font(16px, 18px, 20px, 1.6, 1.6, 1.6, 400, 400, 400);
-  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 
 .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6.h6 {
+  color: $header-color;
+}
+
+.h1,
 h1 {
-  @include font(38px, 60px, 80px, 1.2, 1.2, 1.2, 400, 400, 400);
+  @include font(38px, 60px, 80px, 1.2, 1.2, 1.2, 300, 300, 300);
   margin: 0;
   padding: 0;
 }
 
 .h2,
 h2 {
-  @include font(62px, 36px, 60px, 1.2, 1.2, 1.2, 400, 400, 400);
+  @include font(62px, 36px, 60px, 1.2, 1.2, 1.2, 300, 300, 300);
   margin: 0;
   padding: 0;
 }
 
 .h3,
 h3 {
-  @include font(32px, 48px, 80px, 1.2, 1.2, 1.2, 400, 400, 400);
+  @include font(32px, 48px, 80px, 1.2, 1.2, 1.2, 300, 300, 300);
   margin: 0;
   padding: 0;
 }
@@ -119,6 +137,12 @@ h5 {
 .h6,
 h6 {
   @include font(12px, 12px, 12px, 1.67, 1.67, 1.67, 400, 400, 400);
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  @include font(24px, 32px, 60px, 1.17, 1.17, 1.17, 300, 300, 300);
   margin: 0;
   padding: 0;
 }

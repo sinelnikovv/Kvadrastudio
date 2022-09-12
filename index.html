@@ -1,83 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
-  <title>Kvadrastudio</title>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="header">
-          <div class="header-1st-row d-none d-lg-flex justify-content-between align-items-center">
-            <div class="header-adress d-flex flex-column flex-lg-row me-auto align-items-center">
-              <div class="d-flex flex-column flex-xxl-row"><p class="fw-700">г. Ярославль,</p><p>ул. Щапова, 20, Офис 326</p></div>
-              <p class="d-none d-xxl-block">info@kvadrastudio.ru</p>
-            </div>
-            <div class="header-logo mx-4">
-              <img class="w-100" src="img/logo.png" alt="">
-            </div>
-            <div class="header-callback d-flex flex-column flex-lg-row ms-auto align-items-center">
-              <div class="d-flex flex-column flex-xxl-row"><p class="fw-600">+7 (4852) 94-28-50</p><p>Пн-Пт: 9.00 - 18.00</p></div>
-              <button class="btn fw-600">Перезвоните мне</button>
-            </div>
-          </div>
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand d-lg-none" href="#"><img src="img/logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav w-100 align-items-center justify-content-between">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Портфолио</a>
-                  </li> 
-                  <li class="dot"></li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Услуги</a>
-                  </li>
-                  <li class="dot"></li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Цены</a>
-                  </li>
-                  <li class="dot"></li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">На заказ</a>
-                  </li>
-                  <li class="dot"></li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">О нас</a>
-                  </li>
-                  <li class="dot"></li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Блог</a>
-                  </li>
-                  <li class="dot"></li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
-                  </li>
-                </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+    <title>Kvadrastudio</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="header px-0 mb-lg-0">
+            <div
+              class="header-1st-row d-none d-lg-flex justify-content-between align-items-center"
+            >
+              <div
+                class="header-adress d-flex flex-column flex-lg-row me-auto align-items-center"
+              >
+                <div class="d-flex flex-column flex-xxl-row">
+                  <p class="fw-700">г. Ярославль,</p>
+                  <p>ул. Щапова, 20, Офис 326</p>
+                </div>
+                <p class="d-none d-xxl-block">info@kvadrastudio.ru</p>
+              </div>
+              <div class="header-logo mx-4">
+                <img class="w-100" src="img/logo.png" alt="" />
+              </div>
+              <div
+                class="header-callback d-flex flex-column flex-lg-row ms-auto align-items-center"
+              >
+                <div class="d-flex flex-column flex-xxl-row">
+                  <p class="fw-600">+7 (4852) 94-28-50</p>
+                  <p>Пн-Пт: 9.00 - 18.00</p>
+                </div>
+                <button class="btn fw-600">Перезвоните мне</button>
               </div>
             </div>
-          </nav>
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand d-lg-none header-logo" href="#"
+                  ><img class="w-100" src="img/logo.png" alt=""
+                /></a>
+                <button
+                  class="navbar-toggler collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Переключатель навигации"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul
+                    class="navbar-nav w-100 align-items-center justify-content-between"
+                  >
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Портфолио</a
+                      >
+                    </li>
+                    <li class="dot"></li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Услуги</a>
+                    </li>
+                    <li class="dot"></li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Цены</a>
+                    </li>
+                    <li class="dot"></li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">На заказ</a>
+                    </li>
+                    <li class="dot"></li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="dot"></li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Блог</a>
+                    </li>
+                    <li class="dot"></li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-    
-  </header>
+      <div class="banner">
+        <div class="container position-relative">
+          <p class="h1">Создаём <span class="fw-400">Идеальное</span></p>
+          <p class="h1"><span class="fw-400">Пространство.</span> для вас.</p>
+          <img
+            class="banner_arrow d-none d-lg-block"
+            src="img/arrow-down.svg"
+            alt="arrow"
+          />
+          <button class="btn_play">
+            <img src="img/play_button.svg" alt="" />
+          </button>
+          <div class="btn_round_outter">
+            <img class="w-100" src="img/btn_outter.svg" alt="decor" />
+            <button class="text-white btn_round_inner">
+              Рассчитать проект
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="row intro_heading">
+            <p class="text text-uppercase">
+              <span class="fw-400">Мы с вами</span> на всех этапах:<br />
+              создаём дизайн-проект, ищем <br />
+              пространство и следим за ходом работ
+            </p>
+          </div>
+          <div class="row intro_row">
+            <div
+              class="col-12 col-lg-4 position-relative vl_light intro_padding pe-0"
+            >
+              <img
+                class="w-100 position-relative"
+                src="img/bed.png"
+                alt="Example of interior"
+              />
+            </div>
+            <div
+              class="col-12 offset-lg-3 col-lg-5 d-flex flex-column justify-content-between vl_bold position-relative p-lg-0 intro_padding intro_bg"
+            >
+              <p class="text text-uppercase align-self-lg-end intro_text">
+                И Уважаем ваш <br /><span class="fw-400">комфорт</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="counters">
+        <div>
+          <img class="w-100" src="img/counters.png" alt="Example of interior" />
+        </div>
+        <div class="container" id="counters">
+          <div class="row">
+            <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+              <div class="counter"><span class="number">15</span>+</div>
+              <p>лет на рынке</p>
+            </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
-</body>
+            <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+              <div class="counter"><span class="number">600</span>+</div>
+              <p>проектов</p>
+            </div>
+
+            <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+              <div class="counter"><span class="number">400</span>00</div>
+              <p>м2 воплощено</p>
+            </div>
+
+            <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+              <div class="counter">
+                <img src="img/infinity.svg" alt="" />
+              </div>
+              <p>Идей</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="container h-100 d-flex flex-column">
+          <h3 class="text-uppercase feedback_title text-white">
+            Отзывы <span class="fw-400">о нас</span>
+          </h3>
+          <div class="splide flex-grow-1 d-flex align-items-center">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="qoute d-flex flex-column flex-lg-row">
+                    <img class="quote_symbol" src="img/quote.svg" alt="" />
+                    <div class="quote_text">
+                      <p class="quote_p fw-300">
+                        Поставленные задачи и их решение, а также выполненный
+                        объем работ позволяют характеризовать ООО «Студия
+                        Квадра» как передовую архитектурно-дизайнерскую студию и
+                        надежного подрядчика, старательно относящегося к своей
+                        работе, и выполняющего ее в установленные сроки с
+                        отличным качеством.
+                      </p>
+                      <div
+                        class="quote_info d-flex flex-column flex-md-row justify-content-md-between"
+                      >
+                        <p class="quote_autor fst-italic">
+                          -ЕЛЕНА ВАСИЛЬЕВНА, ЗАО "ПТИ"
+                        </p>
+                        <p class="qoute_date fst-italic">20 ИЮЛЯ 2014</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="qoute d-flex flex-column flex-lg-row">
+                    <img class="quote_symbol" src="img/quote.svg" alt="" />
+                    <div class="quote_text">
+                      <p class="quote_p fw-300">
+                        Поставленные задачи и их решение, а также выполненный
+                        объем работ позволяют характеризовать ООО «Студия
+                        Квадра» как передовую архитектурно-дизайнерскую студию и
+                        надежного подрядчика, старательно относящегося к своей
+                        работе, и выполняющего ее в установленные сроки с
+                        отличным качеством.
+                      </p>
+                      <div
+                        class="quote_info d-flex flex-column flex-md-row justify-content-md-between"
+                      >
+                        <p class="quote_autor fst-italic">
+                          -ЕЛЕНА ВАСИЛЬЕВНА, ЗАО "ПТИ"
+                        </p>
+                        <p class="qoute_date fst-italic">20 ИЮЛЯ 2014</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="qoute d-flex flex-column flex-lg-row">
+                    <img class="quote_symbol" src="img/quote.svg" alt="" />
+                    <div class="quote_text">
+                      <p class="quote_p fw-300">
+                        Поставленные задачи и их решение, а также выполненный
+                        объем работ позволяют характеризовать ООО «Студия
+                        Квадра» как передовую архитектурно-дизайнерскую студию и
+                        надежного подрядчика, старательно относящегося к своей
+                        работе, и выполняющего ее в установленные сроки с
+                        отличным качеством.
+                      </p>
+                      <div
+                        class="quote_info d-flex flex-column flex-md-row justify-content-md-between"
+                      >
+                        <p class="quote_autor fst-italic">
+                          -ЕЛЕНА ВАСИЛЬЕВНА, ЗАО "ПТИ"
+                        </p>
+                        <p class="qoute_date fst-italic">20 ИЮЛЯ 2014</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul class="splide__pagination"></ul>
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">
+                <img src="img/arrow_left.svg" alt="" />
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+                <img src="img/arrow_right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="position-relative overflow-hidden">
+        <div class="container overflow-visible position-relative">
+          <div class="portfolio">
+            <h3 class="portfolio_title text-uppercase">
+              Наше по<span class="portfolio_vl">р</span>тфолио
+            </h3>
+            <p class="portfolio_text">
+              Все фото наших работ - это 100% настоящие фотографии выполненных
+              нами проектов.
+            </p>
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-private-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-private"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-private"
+                  aria-selected="true"
+                >
+                  Частные проекты
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-public-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-public"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-public"
+                  aria-selected="false"
+                >
+                  Общественные проекты
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-private"
+                role="tabpanel"
+                aria-labelledby="pills-private-tab"
+                tabindex="0"
+              >
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="portfolio_card">
+                      <div class="portfolio_card_image">
+                        <img
+                          class="w-100"
+                          src="img/neoclassic.png"
+                          alt="Неоклассика с мароканскими мотивами"
+                        />
+                      </div>
+                      <h4 class="portfolio_card_title">
+                        Неоклассика с мароканскими мотивами
+                      </h4>
+                      <p class="portfolio_card_square">109 м2</p>
+                      <p class="portfolio_card_location">
+                        Ярославль, Московский проспект
+                      </p>
+                      <a href="" class="portfolio_card_btn">Смотреть проект</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="portfolio_card">
+                      <div class="portfolio_card_image">
+                        <img
+                          class="w-100"
+                          src="img/minimalism.png"
+                          alt="Минимализм в деталях"
+                        />
+                      </div>
+                      <h4 class="portfolio_card_title">Минимализм в деталях</h4>
+                      <p class="portfolio_card_square">73 м2</p>
+                      <p class="portfolio_card_location">
+                        Ярославль, ул. Наумова
+                      </p>
+                      <a href="" class="portfolio_card_btn">Смотреть проект</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="portfolio_card">
+                      <div class="portfolio_card_image">
+                        <img
+                          class="w-100"
+                          src="img/townhouse.png"
+                          alt="Таунхаус в неоклассическом стиле"
+                        />
+                      </div>
+                      <h4 class="portfolio_card_title">
+                        Таунхаус в неоклассическом стиле
+                      </h4>
+                      <p class="portfolio_card_square">109 м2</p>
+                      <p class="portfolio_card_location">
+                        Ярославль, ул. Космонавтов
+                      </p>
+                      <a href="" class="portfolio_card_btn">Смотреть проект</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="portfolio_card">
+                      <div class="portfolio_card_image">
+                        <img
+                          class="w-100"
+                          src="img/graceful.png"
+                          alt="Изящная неоклассика"
+                        />
+                      </div>
+                      <h4 class="portfolio_card_title">Изящная неоклассика</h4>
+                      <p class="portfolio_card_square">109 м2</p>
+                      <p class="portfolio_card_location">
+                        Ярославль, Большая Октябрьская
+                      </p>
+                      <a href="" class="portfolio_card_btn">Смотреть проект</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-public"
+                role="tabpanel"
+                aria-labelledby="pills-public-tab"
+                tabindex="0"
+              >
+                ...
+              </div>
+            </div>
+          </div> 
+          <svg class="line_sm d-md-none" width="1px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <line x1="0" y1="0" x2="0" y2="100%" />
+          </svg>  
+          <svg class="line_bg d-none d-md-block" width="1px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <line x1="0" y1="0" x2="0" y2="100%" />
+          </svg> 
+                 
+        </div>
+        <div class="marquee-section">
+          <div class="marquee-div">
+            <p>Смотреть все проекты <span class="arrow"></span>
+              Смотреть все проекты <span class="arrow"></span>
+              Смотреть все проекты <span class="arrow"></span>
+              Смотреть все проекты <span class="arrow"></span>
+              Смотреть все проекты <span class="arrow"></span>
+            </p>
+          </div>
+        </div>
+        <div class="dotted-circle">        
+        </div>               
+      </section>
+      <section>
+
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
