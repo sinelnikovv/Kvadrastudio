@@ -1,0 +1,33 @@
+//сделать миксины для анимации
+
+//animated letters
+
+[data-inviewport="scale_down"] { 
+  transform-origin: top left;
+  transition: 2s;
+  transform: scaleY(0.1);
+}
+[data-inviewport="scale_down"].is-inViewport { 
+  transform-origin: top left;
+  transform: scaleY(1);
+}
+
+[data-inviewport="scale_up"] { 
+  transform-origin: top left;
+  transition: 2s;
+  transform: scaleY(0.1);
+}
+[data-inviewport="scale_up"].is-inViewport { 
+  transform-origin: top left;
+  transform: scaleY(1);
+}
+
+[data-inviewport="scale_center"] { 
+  transform-origin: top left;
+  transition: 2s;
+  transform: scaleY(0.1);
+}
+[data-inviewport="scale_center"].is-inViewport { 
+  transform-origin: top left;
+  transform: scaleY(1);
+}

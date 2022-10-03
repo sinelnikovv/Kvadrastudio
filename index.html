@@ -19,7 +19,6 @@
     <title>Kvadrastudio</title>
   </head>
   <body>
-
     <header>
       <div class="container">
         <div class="row">
@@ -37,7 +36,7 @@
                 <p class="d-none d-xxl-block">info@kvadrastudio.ru</p>
               </div>
               <div class="header-logo mx-4">
-                <img class="w-100" src="img/logo.png" alt="" />
+                <img class="w-100" src="img/logo_dark.png" alt="" />
               </div>
               <div
                 class="header-callback d-flex flex-column flex-lg-row ms-auto align-items-center"
@@ -52,7 +51,7 @@
             <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
                 <a class="navbar-brand d-lg-none header-logo" href="#"
-                  ><img class="w-100" src="img/logo.png" alt=""
+                  ><img class="w-100" src="img/logo_dark.png" alt=""
                 /></a>
                 <button
                   class="navbar-toggler collapsed"
@@ -127,8 +126,10 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> 
+    
     <main>
+
       <section class="intro">
         <div class="container">
           <div class="row intro_heading">
@@ -138,22 +139,22 @@
               пространство и следим за ходом работ
             </p>
           </div>
-          <div class="row intro_row">
-            <div
-              class="col-12 col-lg-4 position-relative vl_light intro_padding pe-0"
-            >
-              <img
-                class="w-100 position-relative"
-                src="img/bed.png"
-                alt="Example of interior"
-              />
+          <div class="row intro_row position-relative">
+            <div class="col-12 col-lg-4 intro_img">
+              <div data-inviewport="scale-y" class="vl_light"></div>
+              <img class="w-100" src="img/bed.png" alt="Example of interior" />
             </div>
-            <div
-              class="col-12 offset-lg-3 col-lg-5 d-flex flex-column justify-content-between vl_bold position-relative p-lg-0 intro_padding intro_bg"
-            >
-              <p class="text text-uppercase align-self-lg-end intro_text">
-                И Уважаем ваш <br /><span class="fw-400">комфорт</span>
+            <div class="col-12 col-lg-8 d-lg-flex justify-content-lg-end align-items-lg-end intro_r">
+              <p class="text text-uppercase intro_text">
+                И Уважаем ваш <br/><span
+                  class="fw-400"
+                  >комфорт</span
+                >
               </p>
+              <div data-inviewport="scale-y" class="vl_bold"></div>
+              <div class="text_img">
+                <img class="w-100" src="img/plan.png" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -288,7 +289,7 @@
         <div class="container overflow-visible position-relative">
           <div class="portfolio">
             <h3 class="portfolio_title text-uppercase">
-              Наше по<span class="portfolio_vl">р</span>тфолио
+              Наше по<span data-inviewport="scale-y" class="portfolio_vl">р</span>тфолио
             </h3>
             <p class="portfolio_text">
               Все фото наших работ - это 100% настоящие фотографии выполненных
@@ -426,7 +427,7 @@
           </svg> 
                  
         </div>
-        <div class="marquee-section">
+         <div class="marquee-section">
           <div class="marquee-div">
             <p>Смотреть все проекты <span class="arrow"></span>
               Смотреть все проекты <span class="arrow"></span>
@@ -436,12 +437,320 @@
             </p>
           </div>
         </div>
-        <div class="dotted-circle">        
-        </div>               
+         <div class="dotted-circle">        
+        </div>                
       </section>
+      <section class="tehObsluga d-flex flex-column flex-xl-row">
+        
+          <div class="col-12 col-xl-7 overflow-hidden  tehObsluga_img">
+            <img  src="img/tehObsluga.png" alt="Example of the interior">
+          </div>
+          <div class="col-12 col-xl-5  tehObsluga_block">
+            <div class="tehObsluga_text position-relative">
+              <p class="text-uppercase">
+                Техобследование и оценка<br>
+                достоинств/недостатков отделки<br>
+                от застройщика для получения компенсации<br>
+              </p>
+              <p class="tehObsluga_free d-flex justify-content-between">Бесплатно <a href="#"><img class="tehObsluga_arrow" src="img/arrow_right.svg" alt=""></a></p>
+              <div data-inviewport="scale-y" class="tehObsluga_vl"></div>
+            </div>
+          </div>        
+      </section>
+
       <section>
+        <div class="container">
+          <div class="tour">
+            <h3 class="tour_title position-relative">Взгляните, так может выглядеть <br class="d-none d-lg-block"> <span class="fw-400">ваш новый интерьер</span> 
+              <img class="tour_arrow" src="img/arrow-down_black.svg" alt="">            
+             </h3>
+            
+            <p class="tour_text">Посмотрите 3D тур готового проекта.</p>
+            <div class="tour_img ">
+              <img class="h-100" src="img/3dtour.png" alt="3D tour">
+              <button class="tour_btn">На весь экран <img class="position-static" src="img/fullscreen.svg" alt="Full Screen button"></button>
+            </div>
+            <p class="tour_text">Мы с удовольствием сделаем такой тур и для вашего проекта.</p>
+        </div>
+      </section>
+      <section class="why_us">
+        <div class="container position-relative d-flex flex-column justify-content-between">
+          <h3 class="why_us_title d-flex flex-column flex-md-row">
+            <p class="h3 text-uppercase">Почему мы -</p>
+            <p class="h3 fw-400 text-uppercase align-self-end">лучшие?</p> </h3>
+          <div data-inviewport="scale-y" class="vl"></div>
+          <div class="why_us_row  d-lg-flex justify-content-between align-items-start">
+            <div>
+              <img class="why_us_img1" src="img/best_1.png" alt="">
+              <p class="text-uppercase"><span class="fw-300">Мы рождаем</span> <br> шедевры!</p>
+            </div>
+            <div><img class="why_us_img2" src="img/best_2.png" alt=""></div>
+            <img class="why_us_plan" src="img/plan.png" alt="Decor">
+            <img class="why_us_arrow" src="img/arrow-down_black.svg" alt="">
+            <svg class="line_sm d-md-none" width="1px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+              <line x1="0" y1="0" x2="0" y2="100%" />
+            </svg>  
+            <svg class="line_bg d-none d-md-block" width="1px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+              <line x1="0" y1="0" x2="0" y2="100%" />
+            </svg> 
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">   
+
+          <div class="row align-items-lg-center">
+            <div class="col-12 col-lg-6 features_img">
+              <img class="w-100" src="img/feature1.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6 features_text">
+              <p class="text">Обмер, скидка при</p>
+              <p class="text align-self-end align-self-lg-start">заключении договора</p>
+            </div>
+          </div>
+
+          <div class="row align-items-lg-center justify-content-end">
+            <div class="order-lg-last col-12 col-lg-6 features_img align-self-end align-self-lg-center">
+              <img class="w-100" src="img/feature1.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6 features_text">
+              <p class="text align-self-center align-self-lg-start">смета на будущий</p>
+              <p class="text">ремонт - бесплатно </p>
+            </div>
+          </div>
+
+          <div class="row align-items-lg-center mb-0">
+            <div class="col-12 col-lg-6 features_img">
+              <img class="w-100" src="img/feature1.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6 features_text">
+              <p class="text">Выезд на замер - </p>
+              <p class="text align-self-end align-self-lg-start">бесплатно</p>
+            </div>
+          </div>
+
+        </div>
+      </section> 
+      
+      <section class="prices">
+        <div class="container position-relative">
+          <h3>Наши <span class="fw-400">тарифы</span></h3>
+          <div class="row">
+
+            <div class="col-12 col-lg-4">
+              <div class="prices_card">
+                <h4 class="prices_title">Концепция</h4>
+                <ul class="prices_list">
+                  <li class="prices_item">Планировочные решения (проектируем с учетом мебели и оборудования)</li>
+                  <li class="prices_item">3D визуализация дизайна интерьера всех помещений (количество ракурсов неограниченно)</li>
+                  <li class="prices_item">Перечень использованных в проекте всех декоративных материалов, также мебели и освещения (поставщики, артикулы, характеристики)</li>
+                </ul>
+                <div>
+                  <p>от <span class="prices_cost">1500</span>₽/м2</p>
+                  <button class="prices_btn">Заказать</button>
+                  <button class="prices_btn prices_download"><img  src="img/download button.svg" alt="">Скачать прайс</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="prices_card">
+              <h4 class="prices_title">Комплекс</h4>
+              <ul class="prices_list">
+                <li class="prices_item">Все по тарифу “Концепция плюс”</li>
+                <li class="prices_item">Чертежная документация (демонтаж, монтаж, электрика, сантехника, отопление, вентиляция, полы, потолки, плитка, стены, мебель)</li>
+                <li class="prices_item">Спецификация использованных в проекте декоративных материалов, всей мебели и освещения (количество, характеристики, артикулы, поставщики)</li>
+              </ul>
+              <div>
+                <p>от <span class="prices_cost">1500</span>₽/м2</p>
+                <button class="prices_btn">Заказать</button>
+                <button class="prices_btn prices_download"><img  src="img/download button.svg" alt="">Скачать прайс</button>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="prices_card">
+            <h4 class="prices_title">Комфорт</h4>
+            <ul class="prices_list">
+              <li class="prices_item">Все по тарифу “Комплекс плюс”</li>
+              <li class="prices_item">Авторский надзор и информационное сопровождение проекта</li>
+              <li class="prices_item">Представление интересов заказчика и скидок при закупке мебели, освещения, оборудования при комплектации объекта</li>
+            </ul>
+            <div>
+              <p>от <span class="prices_cost">1500</span>₽/м2</p>
+              <button class="prices_btn">Заказать</button>
+              <button class="prices_btn prices_download"><img  src="img/download button.svg" alt="">Скачать прайс</button>
+            </div>
+        </div>
+      </div>
+
+        </div>
+        <div class="prices_photo">
+          <img class="w-100" src="img/prices_photo.png" alt="Room interior">
+        </div>
+      </section>
+
+      <section class="about_us">
+        <div class="container">
+          <h3 class="about_us_title">О <span class="fw-400">нас</span></h3>
+          <h4 class="about_us_subtitle">Дизайн студия интерьера в Ярославле | Квадра</h4>
+          <p class="about_us_text">В связи с наступлением технического прогресса, стремительного развития промышленности и улучшения уровня жизни в нашем лексиконе появились новые слова. Одним из таких является слово – дизайн интерьера.</p>
+
+          <p class="about_us_text">Существует много определений данного понятия. Все они сводятся к тому, что дизайном интерьера называется тандем искусства и технологии, или функционал в утонченном оформлении.</p>
+
+          <p class="about_us_text">Дизайн интерьера – это искусство, позволяющее из объекта стандартного вида воссоздать многофункциональный, эстетичный и комфортабельный, и в то же время обладающий неповторимой индивидуальностью. Поэтому дизайнер интерьера должен иметь чувство вкуса, талант и глубокие разносторонние знания.</p>
+
+          <a href="#" class="about_us_more">Читать далее</a>
+
+        </div>
+      </section>
+      <section class="example">
+        <div class="container">
+          <div class="h3 example_title">Таким интерьер может быть И у Вас. <span class="fw-400">И даже лучше.</span></div>
+          <p class="example_text d-none d-md-block col-8">Эти видео наглядно рассказывают о том, 
+            что все наши интерьеры выглядят в реальности точно
+            также, как мы их задумали в самом начале проектирования. </p>
+          <div class="example_video">
+            <video width="100%" poster="img/poster1.png">                         
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="example_video example_video_b">
+            <video width="100%" poster="img/poster2.png">                         
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          
+          <p class="example_text col-lg-8">Эти видео наглядно рассказывают о том, 
+            что все наши интерьеры выглядят в реальности точно
+            также, как мы их задумали в самом начале проектирования. </p>
 
       </section>
+
+      <section class="design">
+        <div class="container">
+          <h3 class="design_title">Дизайн <span class="fw-400">интерьера</span></h3>
+          <p class="design_text">Стиль, функциональность, индивидуальность и практичность —
+            четыре составляющие идеального интерьера</p>
+        </div>
+
+        <div class="architecture mb_60_100">
+          <div class="architecture_img"><img class="w-100" src="img/design1.png" alt="Architecture design"></div>
+          <div class="container position-relative">
+            <h4 class="architecture_title design_template_title">Архитектура</h4>
+          </div>
+        </div>
+
+        <div class="repair mb_60_100">
+          <div class="repair_img"><img class="w-100" src="img/design2.png" alt="Repair design"></div>
+          <div class="container position-relative">
+            <h4 class="design_template_title repair_title">Ремонт</h4>
+          </div>
+        </div>
+
+        <div class="ordered mb_60_100">
+          <div class="ordered_img"><img class="w-100" src="img/design3.png" alt="Ordered design"></div>
+          <div class="container position-relative">
+            <h4 class="design_template_title ordered_title">Изделия на заказ</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="callback position-relative">        
+        <div class="container">
+          
+          <div class="col-12 col-lg-7">
+            
+            <div class="callback_form">
+              <h3>Обратная <span class="fw-400">связь</span></h3>
+              <form action="#" method="post" class="form">
+                  <input type="text" class="form_input w-100" id="name" placeholder="Ваше имя*">
+            
+                  <div class="d-flex justify-content-between">
+                    <input type="text" class="form_input col-5" id="phone" placeholder="Ваш номер*">
+                    <input type="email" class="form_input col-6" id="email" placeholder="Ваш E-mail">
+                  </div>
+            
+                  <textarea class="form_textarea form_input w-100" id="message" rows="3" placeholder="Ваше сообщение*"></textarea>
+            
+                <button type="submit" class="form_btn w-100">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- Footer, 1 col in mobile version, 4 cols in desktop version  -->
+
+      <footer class="footer">
+        <div class="container position-relative">
+          <img class="footer_plan" src="img/plan.png" alt="Decor">
+          <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="footer_logo col-9 col-md-12"><img class="w-100" src="img/logo_light.png" alt="Logo"></div>
+              <div class="footer_text">Студия дизайна интерьера в ярославле</div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              
+              <h5 class="footer_title">Дизайн</h5>
+              <ul class="footer_list">
+                <li class="footer_item"><a href="#" class="footer_link">Дизайн домов</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Дизайн квартир</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Дизайн ванной</a>
+                </li>
+                <li class="footer_item"><a href="#" class="footer_link">Дизайн спален</a>
+                </li>
+              </ul>                                        
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">              
+              <h5 class="footer_title">Услуги</h5>
+              <ul class="footer_list">
+                <li class="footer_item"><a href="#" class="footer_link">Авторский надзор</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Архитектурное проектирование</a></li>
+                <li class="footer_item"><a href="#" class="footer_link">Ремонтно-отделочные работы</a>
+                </li>
+                <li class="footer_item"><a href="#" class="footer_link">Технический состав проекта</a>
+                </li>
+              </ul>                        
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <button class="footer_btn">Перезвоните мне</button>
+              <ul class="footer_list">
+                <li class="footer_item">г. Ярославль,<span class="footer_item_dark">ул. Щапова, 20, Офис 326</span></li>
+                <li class="footer_item">+7 (4852) 94-28-50<span class="footer_item_dark">Пн-Пт: 9.00 - 18.00</span></li>
+                <li class="footer_item">info@kvadrastudio.ru</li>
+              </ul>             
+            </div>
+
+            
+          </div>
+          <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block"></div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-0">
+              <div class="footer_bottom">2022© kvadrastudio.ru</div> 
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-0">
+              <div class="footer_bottom">Политика конфиденциальности</div>   
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-0">
+              <div class="footer_bottom">Создание и продвижение сайта</div>             
+            </div>
+
+          </div>
+        </div>
+      </footer>
+      
+      
+      
     </main>
 
     <script
