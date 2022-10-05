@@ -2,6 +2,52 @@
 
 //animated letters
 
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn{
+  &_round {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;   
+    // overflow: hidden;
+    border: none;    
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    &::before{
+      content: "";      
+      border-radius: 999px;
+      position: absolute;      
+      width: 260px;
+      height: 260px;    
+      background: url(img/btn_outter.svg) no-repeat;
+      background-size: 100%;
+      animation-name: rotate;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      @media screen and (min-width: 768px) {        
+        width: 370px;
+        height: 370px;        
+      } 
+    }
+    @media screen and (min-width: 768px) {
+      width: 285px;
+      height: 285px;
+      
+    }        
+  }
+}
+
 [data-inviewport="scale_down"] { 
   transform-origin: top left;
   transition: 2s;
