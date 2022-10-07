@@ -97,3 +97,16 @@ const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
 ELs_inViewport.forEach(EL => {
   Obs.observe(EL, obsOptions);
 });
+
+//navbar hide
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar_section").style.top = "0";
+  } else {
+    document.querySelector(".navbar_section").style.top = "-100%";
+  }
+  prevScrollpos = currentScrollPos;
+}

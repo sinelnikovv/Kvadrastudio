@@ -49,27 +49,27 @@
 }
 
 [data-inviewport="scale_down"] { 
-  transform-origin: top left;
+  transform-origin: top center;
   transition: 2s;
   transform: scaleY(0.1);
 }
 [data-inviewport="scale_down"].is-inViewport { 
-  transform-origin: top left;
+  transform-origin: top center;
   transform: scaleY(1);
 }
 
 [data-inviewport="scale_up"] { 
-  transform-origin: top left;
+  transform-origin: bottom left;
   transition: 2s;
   transform: scaleY(0.1);
 }
 [data-inviewport="scale_up"].is-inViewport { 
-  transform-origin: top left;
+  transform-origin: bottom left;
   transform: scaleY(1);
 }
 
 [data-inviewport="scale_center"] { 
-  transform-origin: top left;
+  transform-origin: center center;
   transition: 2s;
   transform: scaleY(0.1);
 }
@@ -77,3 +77,74 @@
   transform-origin: top left;
   transform: scaleY(1);
 }
+
+@mixin vl($width, $height, $bg-color, $origin, $top, $right, $bottom, $left) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+  transform-origin: $origin;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;     
+}
+
+.vl{
+
+  &_header{
+
+    &_light{
+      @media screen and (min-width: 992px) { 
+        @include vl(1px, 100%, #333,top center, auto , auto , 0, 180px);    
+        z-index: -1;                
+      }
+    }
+
+    &_bold{
+      @include vl(2px, 100%, #333,top center, 0 , auto , 0, 12px); 
+      
+      @media screen and (min-width: 992px) { 
+        @include vl(2px, 100%, #333, 0 265px, 0 , auto , 0, 532px);                    
+      }
+
+      @media screen and (min-width: 1200px) { 
+        @include vl(2px, 100%, #333,top center, 0 , auto , 0, 712px);                    
+      }
+
+      @media screen and (min-width: 1400px) { 
+        @include vl(3px, 100%, #333,top center, 0 , auto , 0, 690px);                    
+      }
+
+      @media screen and (min-width: 1490px) { 
+        @include vl(3px, 100%, #333,top center, 0 , auto , 0, 861px);                    
+      }
+
+      @media screen and (min-width: 1490px) { 
+        @include vl(3px, 100%, #333,top center, 0 , auto , 0, 891px);                    
+      }      
+      
+    }
+    
+  }
+
+  &_portfolio{
+    &_bold{
+      @include vl(3px, 80px, #333, bottom center, 0 , auto , 0, 160px); 
+      
+      @media screen and (min-width: 768px) { 
+        @include vl(4px, 80px, #333, bottom center, 0 , auto , 0, 235px);                    
+      }
+
+      @media screen and (min-width: 992px) { 
+        @include vl(5px, 245px, #333, bottom center, 0 , auto , 0, 237px);                     
+      }
+
+      @media screen and (min-width: 1200px) { 
+        @include vl(5px, 245px, #333, bottom center, 0 , auto , 0, 385px);                      
+      }   
+      
+    }
+  }
+}
+

@@ -340,29 +340,29 @@ h6 {
 }
 
 [data-inviewport=scale_down] {
-  transform-origin: top left;
+  transform-origin: top center;
   transition: 2s;
   transform: scaleY(0.1);
 }
 
 [data-inviewport=scale_down].is-inViewport {
-  transform-origin: top left;
+  transform-origin: top center;
   transform: scaleY(1);
 }
 
 [data-inviewport=scale_up] {
-  transform-origin: top left;
+  transform-origin: bottom left;
   transition: 2s;
   transform: scaleY(0.1);
 }
 
 [data-inviewport=scale_up].is-inViewport {
-  transform-origin: top left;
+  transform-origin: bottom left;
   transform: scaleY(1);
 }
 
 [data-inviewport=scale_center] {
-  transform-origin: top left;
+  transform-origin: center center;
   transition: 2s;
   transform: scaleY(0.1);
 }
@@ -370,6 +370,147 @@ h6 {
 [data-inviewport=scale_center].is-inViewport {
   transform-origin: top left;
   transform: scaleY(1);
+}
+
+@media screen and (min-width: 992px) {
+  .vl_header_light {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #333;
+    transform-origin: top center;
+    top: auto;
+    bottom: 0;
+    left: 180px;
+    right: auto;
+    z-index: -1;
+  }
+}
+.vl_header_bold {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #333;
+  transform-origin: top center;
+  top: 0;
+  bottom: 0;
+  left: 12px;
+  right: auto;
+}
+@media screen and (min-width: 992px) {
+  .vl_header_bold {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #333;
+    transform-origin: 0 265px;
+    top: 0;
+    bottom: 0;
+    left: 532px;
+    right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .vl_header_bold {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #333;
+    transform-origin: top center;
+    top: 0;
+    bottom: 0;
+    left: 712px;
+    right: auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .vl_header_bold {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #333;
+    transform-origin: top center;
+    top: 0;
+    bottom: 0;
+    left: 690px;
+    right: auto;
+  }
+}
+@media screen and (min-width: 1490px) {
+  .vl_header_bold {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #333;
+    transform-origin: top center;
+    top: 0;
+    bottom: 0;
+    left: 861px;
+    right: auto;
+  }
+}
+@media screen and (min-width: 1490px) {
+  .vl_header_bold {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #333;
+    transform-origin: top center;
+    top: 0;
+    bottom: 0;
+    left: 891px;
+    right: auto;
+  }
+}
+.vl_portfolio_bold {
+  position: absolute;
+  width: 3px;
+  height: 80px;
+  background-color: #333;
+  transform-origin: bottom center;
+  top: 0;
+  bottom: 0;
+  left: 160px;
+  right: auto;
+}
+@media screen and (min-width: 768px) {
+  .vl_portfolio_bold {
+    position: absolute;
+    width: 4px;
+    height: 80px;
+    background-color: #333;
+    transform-origin: bottom center;
+    top: 0;
+    bottom: 0;
+    left: 235px;
+    right: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .vl_portfolio_bold {
+    position: absolute;
+    width: 5px;
+    height: 245px;
+    background-color: #333;
+    transform-origin: bottom center;
+    top: 0;
+    bottom: 0;
+    left: 237px;
+    right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .vl_portfolio_bold {
+    position: absolute;
+    width: 5px;
+    height: 245px;
+    background-color: #333;
+    transform-origin: bottom center;
+    top: 0;
+    bottom: 0;
+    left: 385px;
+    right: auto;
+  }
 }
 
 @media screen and (min-width: 1490px) {
@@ -405,7 +546,7 @@ h6 {
 @media screen and (min-width: 768px) {
   .btn_header {
     left: auto;
-    right: 0;
+    right: 100px;
     bottom: -90px;
     font-size: 22px;
   }
@@ -418,6 +559,15 @@ h6 {
   border: none;
   border-radius: 50%;
   background: transparent;
+}
+
+header {
+  margin-top: 110px;
+}
+@media screen and (min-width: 768px) {
+  header {
+    margin-top: 205px;
+  }
 }
 
 .header {
@@ -469,6 +619,10 @@ h6 {
 }
 .navbar-brand {
   padding: 0;
+}
+.navbar_section {
+  background: white;
+  transition: 1s;
 }
 
 .nav-link {
@@ -525,6 +679,12 @@ h6 {
   background-size: cover;
   padding: 0 16px 0;
   color: #fff;
+  margin-bottom: 110px;
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    margin-bottom: 140px;
+  }
 }
 .banner .container {
   padding: 160px 0 280px;
@@ -634,53 +794,6 @@ h6 {
 }
 @media screen and (min-width: 1520px) {
   .intro .text_img {
-    left: 891px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .vl_light {
-    position: absolute;
-    bottom: 0;
-    left: 180px;
-    height: 100%;
-    width: 1px;
-    background-color: #333;
-    z-index: -1;
-  }
-}
-
-.vl_bold {
-  position: absolute;
-  bottom: 0;
-  left: 12px;
-  width: 2px;
-  height: 100%;
-  background: #333333;
-}
-@media screen and (min-width: 992px) {
-  .vl_bold {
-    left: 532px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .vl_bold {
-    left: 712px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .vl_bold {
-    width: 3px;
-    left: 690px;
-  }
-}
-@media screen and (min-width: 1490px) {
-  .vl_bold {
-    left: 861px;
-  }
-}
-@media screen and (min-width: 1520px) {
-  .vl_bold {
     left: 891px;
   }
 }
@@ -838,30 +951,6 @@ h6 {
 @media screen and (min-width: 992px) {
   .portfolio_title {
     padding: 200px 0 0;
-  }
-}
-.portfolio_vl {
-  position: relative;
-}
-.portfolio_vl::after {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  height: 500px;
-  left: 3px;
-  width: 3px;
-  background-color: #333;
-}
-@media screen and (min-width: 768px) {
-  .portfolio_vl::after {
-    left: 4px;
-    width: 4px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .portfolio_vl::after {
-    left: 5px;
-    width: 6px;
   }
 }
 .portfolio_text {
