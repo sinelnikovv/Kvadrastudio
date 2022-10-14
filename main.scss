@@ -511,62 +511,8 @@ header{
         line-height: 42px;
       }
     }
-  }
-  .line_sm {
-    position: absolute;
-    z-index: -1;
-    right: 16px;
-    top: 1650px;
-    height: 500px;
-    @media screen and (min-width: 425px) {
-      top: 1800px;
-      height: 600px;
-    }
-    @media screen and (min-width: 556px) {
-      top: 2100px;
-      height: 600px;
-    }
-  
-    line {
-      stroke: #999999;
-      stroke-dasharray: 5, 5;
-      stroke-dashoffset: 82;
-      animation: lineMove 8s infinite linear;
-    }
-  }
-  
-  .line_bg {
-    position: absolute;
-    right: 16px;
-  
-    top: 2400px;
-    height: 600px;
-    z-index: -1;
-    @media screen and (min-width: 992px) {
-      top: 900px;
-      right: 70px;
-      height: 600px;
-    }
-    @media screen and (min-width: 1400px) {
-      top: 1100px;
-      right: 70px;
-      height: 600px;
-    }
-    line {
-      stroke: #999999;
-      stroke-dasharray: 20, 20;
-      stroke-dashoffset: 82;
-      animation: lineMove 2s infinite linear;
-    }
-  }
-  
-  @keyframes lineMove {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-}
+  }  
+}  
 
 .marquee-section {
   position: relative;
@@ -610,45 +556,12 @@ header{
   animation: move-left-to-right linear 12.5s infinite;
 }
 
-@keyframes move-left-to-right {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.dotted-circle {
-  position: absolute;
-  z-index: 2;
-  top: 740px;
-  right: 16px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: url(img/circle_sm.svg) no-repeat center;
-  background-size: cover;
-  animation-name: rotate;
-  animation-duration: 50s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  @media screen and (min-width: 992px) {
-    top: 320px;
-    width: 370px;
-    height: 370px;
-    background: url(img/circle_big.svg) no-repeat center;
-    background-size: cover;
-  }
-}
-
-
-
 .tehObsluga {
   margin: 50px 0;
   @media screen and (min-width: 992px) {
     margin: 100px 0;
   }
+
   &_img {
     img {
       width: 100%;
@@ -659,6 +572,7 @@ header{
     }
     
   }
+
   &_block {
     position: relative;
     top: -45px;
@@ -672,6 +586,7 @@ header{
       width: 41.66666667%;   
     }
   }
+
   &_text {
     padding: 130px 16px 50px;
     @media screen and (min-width: 992px) {
@@ -689,6 +604,7 @@ header{
       }
     }
   }
+
   &_free {
     font-weight: 600;
     font-size: 22px;
@@ -699,15 +615,8 @@ header{
       line-height: 50px;
       margin-top: 50px;
     }
-  }
-  &_vl{
-    position: absolute;
-    top: 0;
-    left: 16px;
-    width: 1px;
-    height: 110px;
-    background: rgba(255, 255, 255, 0.6);    
-  }
+  } 
+
   &_arrow{
     width: 50px;
     height: 6px;
@@ -719,7 +628,7 @@ header{
 }
 
 .tour{
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   &_title{
     text-transform: uppercase;
     margin: 50px 0  24px;
@@ -746,8 +655,8 @@ header{
     margin: auto;
     }
 
-    @media screen and (min-width: 992px) {
-      margin: 50px 0px;     
+    @media screen and (min-width: 1200px) {
+      margin: 100px 0px;     
     }
   }
 
@@ -791,18 +700,19 @@ header{
 
 }
 
-.why_us{
-  padding: 50px 0 0;
+.why_us{ 
   @media screen and (min-width: 992px) {
     padding: 100px 0 0px;
   }
+
+  &_row{
+    padding-top: 370px;
+  }
+  
   p{
-    font-size: 24px;
-    line-height: 28px;
-    @media screen and (min-width: 425px) {
-      font-size: 32px;
-    line-height: 42px;     
-    }
+    font-size: 32px;
+    line-height: 42px;
+   
     @media screen and (min-width: 992px) {
       font-size: 60px;
     line-height: 73px;    
@@ -816,24 +726,7 @@ header{
       min-height:725px;
     } 
   }
-  .vl{
-    z-index: -1;
-    position: absolute;
-    width: 1px;
-    background: #333;
-    top: 20px;
-    left: 74px;
-    height: 100px;
-    @media screen and (min-width: 768px) {
-      left: 104px;
-      width: 3px;
-    }
-    @media screen and (min-width: 992px) {
-      left: 167px;
-      width: 4px;
-      height: 300px;
-    }
-  }
+  
   &_img1{
     position: absolute;
     top: 105px;
@@ -890,11 +783,8 @@ header{
       right: 550px;
       }    
   }
-  &_arrow{
-    position: absolute;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
+  &_arrow{ 
+    
     width: 8px;
     height: 50px;
     

@@ -1,52 +1,92 @@
-//сделать миксины для анимации
-
-//animated letters
-
-
-@keyframes rotate {
-  from {
-    transform: rotate(-360deg);
-  }
-  to {
+//key frames
+@keyframes spin { 
+  100% { 
     transform: rotate(360deg);
   }
 }
 
-.btn{
-  &_round {
-    position: absolute;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;   
-    // overflow: hidden;
-    border: none;    
-    border-radius: 50%;
-    width: 210px;
-    height: 210px;
-    &::before{
-      content: "";      
-      border-radius: 999px;
-      position: absolute;      
-      width: 260px;
-      height: 260px;    
-      background: url(img/btn_outter.svg) no-repeat;
-      background-size: 100%;
-      animation-name: rotate;
-      animation-duration: 30s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      @media screen and (min-width: 768px) {        
-        width: 370px;
-        height: 370px;        
-      } 
-    }
-    @media screen and (min-width: 768px) {
-      width: 285px;
-      height: 285px;
-      
-    }        
+
+@keyframes lineMove {
+  to {
+    stroke-dashoffset: 0;
   }
 }
+
+@keyframes move-left-to-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+//mixins
+
+@mixin dashed_line($height, $color) {
+  width: 1px;
+  height: $height;
+  overflow: hidden;
+  line {
+    stroke: $color;
+    stroke-width: 5px;
+    stroke-dasharray: 5, 5;
+    stroke-dashoffset: 100;
+    animation: lineMove 8s linear infinite;
+  }
+  @media screen and (min-width: 992px) {      
+    line {
+      stroke-dashoffset: 1000;
+      stroke-dasharray: 20, 20;
+      animation: lineMove 25s linear infinite;
+    }      
+  }  
+}
+
+
+@mixin vl($width, $height, $bg-color, $origin, $top, $right, $bottom, $left) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+  transform-origin: $origin;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;     
+}
+
+
+@mixin dashed_circle($color) {
+  position: absolute;  
+  width: 100px;
+  height: 100px;
+  z-index: 10;  
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }   
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 370px;
+  }   
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    animation: spin 40s linear infinite;
+  }
+
+  circle {  
+  stroke-width: 1;
+  stroke-dasharray: 5, 5;
+  fill: none;
+  stroke: $color;
+  }  
+}  
+
+//animated letters
+
 
 [data-inviewport="scale_down"] { 
   transform-origin: top center;
@@ -78,20 +118,9 @@
   transform: scaleY(1);
 }
 
-@mixin vl($width, $height, $bg-color, $origin, $top, $right, $bottom, $left) {
-  position: absolute;
-  width: $width;
-  height: $height;
-  background-color: $bg-color;
-  transform-origin: $origin;
-  top: $top;
-  bottom: $bottom;
-  left: $left;
-  right: $right;     
-}
+//animated vertical lines
 
 .vl{
-
   &_header{
 
     &_light{
@@ -124,10 +153,8 @@
         @include vl(3px, 100%, #333,top center, 0 , auto , 0, 891px);                    
       }      
       
-    }
-    
+    }    
   }
-
   &_portfolio{
     &_bold{
       @include vl(3px, 80px, #333, bottom center, 0 , auto , 0, 160px); 
@@ -146,5 +173,125 @@
       
     }
   }
+
+  &_techobsluga{
+    @include vl(1px, 400px, #fff,bottom center, auto , auto , 192px, 16px);     
+    opacity: 0.6; 
+    @media screen and (min-width: 768px) { 
+      bottom: 350px;
+    } 
+    @media screen and (min-width: 1200px) { 
+      height: 100px;
+      bottom : auto;
+      top: 0;
+    } 
+  }
+
+  &_why_us{
+    @include vl(1px, 100px, #333,top center, 31px , auto , auto, 73px);  
+    z-index: -1;
+    @media screen and (min-width: 768px) {
+      top: 10px;
+      left: 74px;
+      width: 2px;
+      }
+    @media screen and (min-width: 992px) {
+      left: 128px;
+      top: 14px;
+      width: 4px;
+      height: 450px;
+    }
+  }
 }
 
+
+//play buttons
+
+.btn{
+  &_round {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;   
+    // overflow: hidden;
+    border: none;    
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    &::before{
+      content: "";      
+      border-radius: 999px;
+      position: absolute;      
+      width: 260px;
+      height: 260px;    
+      background: url(img/btn_outter.svg) no-repeat;
+      background-size: 100%;
+      animation-name: spin;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      @media screen and (min-width: 768px) {        
+        width: 370px;
+        height: 370px;        
+      } 
+    }
+    @media screen and (min-width: 768px) {
+      width: 285px;
+      height: 285px;
+      
+    }        
+  }
+}
+
+//dashed vl
+
+.dashed-line{
+  &_portfolio{
+    @include dashed_line(500px, #999);    
+    position: absolute;
+    z-index: -1;
+    right: 16px;
+    top: 1650px;
+
+    @media screen and (min-width: 425px) {
+      top: 1800px;
+      height: 600px;
+      }
+    @media screen and (min-width: 556px) {
+      top: 2100px;
+      height: 600px;
+    }
+    @media screen and (min-width: 768px) {
+      top: 2500px;
+      height: 600px;
+    }
+    @media screen and (min-width: 992px) {
+      top: auto;
+      bottom: 0;
+      right: 90px;
+      height: 1500px;
+    }
+  }
+}
+
+
+//dashed circles
+
+.dashed-circle{  
+  &_portfolio{
+    @include dashed_circle(#999);
+    right: 16px;
+    top: 770px;
+    @media screen and (min-width: 768px) {
+      top: 1050px;
+    }
+    @media screen and (min-width: 768px) {
+      top: 400px;
+      right: -50px;
+    }
+    @media screen and (min-width: 1500px) {
+      top: 300px;
+      right: -160px;
+    }
+  }    
+}

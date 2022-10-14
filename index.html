@@ -416,15 +416,21 @@
               </div>
             </div>
             <div data-inviewport="scale_up" class="vl_portfolio_bold"></div>
-          </div> 
+          </div>  
 
           
-          <svg class="line_sm d-md-none" width="1px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-            <line x1="0" y1="0" x2="0" y2="100%" />
-          </svg>  
-          <svg class="line_bg d-none d-md-block" width="1px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-            <line x1="0" y1="0" x2="0" y2="100%" />
-          </svg> 
+          
+          <div class="dashed-line_portfolio">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+              <line x1="0" y1="0" x2="0" y2="100%" />            
+            </svg>
+          </div>
+
+          <div class="dashed-circle_portfolio">
+            <svg>
+              <circle cx="50%" cy="50%" r="49%"></circle>            
+            </svg>            
+          </div>
                  
         </div>
          <div class="marquee-section">
@@ -437,10 +443,9 @@
             </p>
           </div>
         </div>
-         <div class="dotted-circle">        
-        </div>                
+                        
       </section>
-      <section class="tehObsluga d-flex flex-column flex-xl-row">
+      <section class="tehObsluga d-flex flex-column flex-xl-row overflow-hidden">
         
           <div class="col-12 col-xl-7 overflow-hidden  tehObsluga_img">
             <img  src="img/tehObsluga.png" alt="Example of the interior">
@@ -450,10 +455,10 @@
               <p class="text-uppercase">
                 Техобследование и оценка<br>
                 достоинств/недостатков отделки<br>
-                от застройщика для получения компенсации<br>
+                от застройщика для получения компенсации<br>                
               </p>
               <p class="tehObsluga_free d-flex justify-content-between">Бесплатно <a href="#"><img class="tehObsluga_arrow" src="img/arrow_right.svg" alt=""></a></p>
-              <div data-inviewport="scale-y" class="tehObsluga_vl"></div>
+              <div data-inviewport="scale_down" class="vl_techobsluga"></div>
             </div>
           </div>        
       </section>
@@ -462,41 +467,39 @@
         <div class="container">
           <div class="tour">
             <h3 class="tour_title position-relative">Взгляните, так может выглядеть <br class="d-none d-lg-block"> <span class="fw-400">ваш новый интерьер</span> 
-              <img class="tour_arrow" src="img/arrow-down_black.svg" alt="">            
+              <a href="#tour_api"><img class="tour_arrow" src="img/arrow-down_black.svg" alt="">    </a>        
              </h3>
             
             <p class="tour_text">Посмотрите 3D тур готового проекта.</p>
-            <div class="tour_img ">
+            <div class="tour_img" id="tour_api">
               <img class="h-100" src="img/3dtour.png" alt="3D tour">
               <button class="tour_btn">На весь экран <img class="position-static" src="img/fullscreen.svg" alt="Full Screen button"></button>
             </div>
             <p class="tour_text">Мы с удовольствием сделаем такой тур и для вашего проекта.</p>
         </div>
       </section>
+
       <section class="why_us">
         <div class="container position-relative d-flex flex-column justify-content-between">
           <h3 class="why_us_title d-flex flex-column flex-md-row">
             <p class="h3 text-uppercase">Почему мы -</p>
-            <p class="h3 fw-400 text-uppercase align-self-end">лучшие?</p> </h3>
+            <p class="h3 fw-400 text-uppercase align-self-end">лучшие?</p> 
+          </h3>
           <div data-inviewport="scale-y" class="vl"></div>
-          <div class="why_us_row  d-lg-flex justify-content-between align-items-start">
+          <div class="why_us_row  d-flex align-items-end justify-content-lg-between ">
             <div>
               <img class="why_us_img1" src="img/best_1.png" alt="">
               <p class="text-uppercase"><span class="fw-300">Мы рождаем</span> <br> шедевры!</p>
             </div>
             <div><img class="why_us_img2" src="img/best_2.png" alt=""></div>
-            <img class="why_us_plan" src="img/plan.png" alt="Decor">
-            <img class="why_us_arrow" src="img/arrow-down_black.svg" alt="">
-            <svg class="line_sm d-md-none" width="1px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-              <line x1="0" y1="0" x2="0" y2="100%" />
-            </svg>  
-            <svg class="line_bg d-none d-md-block" width="1px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-              <line x1="0" y1="0" x2="0" y2="100%" />
-            </svg> 
           </div>
+          <img class="why_us_plan" src="img/plan.png" alt="Decor">
+          <a href="#features" class="why_us_arrow mx-auto position-relative"><img class="w-100" src="img/arrow-down_black.svg" alt=""></a>
+          <div data-inviewport="scale_down"  class="vl_why_us"></div>
         </div>
+       
       </section>
-      <section class="features">
+      <section id="features" class="features">
         <div class="container">   
 
           <div class="row align-items-lg-center">
