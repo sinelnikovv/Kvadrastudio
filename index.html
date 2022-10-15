@@ -496,11 +496,16 @@
           <img class="why_us_plan" src="img/plan.png" alt="Decor">
           <a href="#features" class="why_us_arrow mx-auto position-relative"><img class="w-100" src="img/arrow-down_black.svg" alt=""></a>
           <div data-inviewport="scale_down"  class="vl_why_us"></div>
+          <div class="dashed-line_why_us">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+              <line x1="0" y1="0" x2="0" y2="100%" />            
+            </svg>
+          </div>
         </div>
        
       </section>
-      <section id="features" class="features">
-        <div class="container">   
+      <section id="features" class="features position-relative overflow-hidden" style="z-index: -1;">
+        <div class="container position-relative">   
 
           <div class="row align-items-lg-center">
             <div class="col-12 col-lg-6 features_img">
@@ -531,8 +536,18 @@
               <p class="text align-self-end align-self-lg-start">бесплатно</p>
             </div>
           </div>
-
+          <div class="dashed-circle_features">
+            <svg>
+              <circle cx="50%" cy="50%" r="49%"></circle>            
+            </svg>            
+          </div>  
+          <div class="dashed-line_features">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+              <line x1="0" y1="0" x2="0" y2="100%" />            
+            </svg>
+          </div>        
         </div>
+        
       </section> 
       
       <section class="prices">
@@ -604,39 +619,57 @@
 
           <p class="about_us_text">Дизайн интерьера – это искусство, позволяющее из объекта стандартного вида воссоздать многофункциональный, эстетичный и комфортабельный, и в то же время обладающий неповторимой индивидуальностью. Поэтому дизайнер интерьера должен иметь чувство вкуса, талант и глубокие разносторонние знания.</p>
 
-          <a href="#" class="about_us_more">Читать далее</a>
+          <p class="collapse" id="about_collapse">            
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.            
+          </p>
+
+          <a href="#about_collapse" class="about_us_more" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">Читать далее</a>
 
         </div>
       </section>
       <section class="example">
-        <div class="container">
+        <div class="container position-relative">
           <div class="h3 example_title">Таким интерьер может быть И у Вас. <span class="fw-400">И даже лучше.</span></div>
           <p class="example_text d-none d-md-block col-8">Эти видео наглядно рассказывают о том, 
             что все наши интерьеры выглядят в реальности точно
             также, как мы их задумали в самом начале проектирования. </p>
-          <div class="example_video">
-            <video width="100%" poster="img/poster1.png">                         
+          <div class="example_video position-relative">
+            <video width="100%"  poster="img/poster1.png">                         
               Your browser does not support the video tag.
             </video>
+            <button class="btn_round btn_big-play"><img src="img/play_button_big.svg" alt="Play button"></button>
           </div>
 
-          <div class="example_video example_video_b">
+          <div class="example_video example_video_b position-relative">
             <video width="100%" poster="img/poster2.png">                         
               Your browser does not support the video tag.
             </video>
+            <button class="btn_round btn_big-play"><img src="img/play_button_big.svg" alt="Play button"></button>
           </div>
           
-          <p class="example_text col-lg-8">Эти видео наглядно рассказывают о том, 
-            что все наши интерьеры выглядят в реальности точно
-            также, как мы их задумали в самом начале проектирования. </p>
-
+          <p class="example_text col-lg-6">После сдачи вашего проекта мы подарим
+            профессиональные фото и видео материалы
+            готового объекта. </p>
+          <a href="#design" class="example_arrow"><img class="h-100" src="img/arrow-down_black.svg" alt="Button to next section"></a>
+        </div>
       </section>
 
-      <section class="design">
-        <div class="container">
+      <section id="design" class="design position-relative" style="z-index: -5;">
+        <div class="container position-relative">
           <h3 class="design_title">Дизайн <span class="fw-400">интерьера</span></h3>
-          <p class="design_text">Стиль, функциональность, индивидуальность и практичность —
+          <p class="design_text col-10 col-md-12">Стиль, функциональность, индивидуальность и практичность —
             четыре составляющие идеального интерьера</p>
+            <div class="dashed-line_design_left">
+              <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                <line x1="0" y1="0" x2="0" y2="100%" />            
+              </svg>
+            </div>  
+            <div class="dashed-line_design_right">
+              <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                <line x1="0" y1="0" x2="0" y2="100%" />            
+              </svg>
+            </div>  
+            
         </div>
 
         <div class="architecture mb_60_100">
@@ -646,22 +679,30 @@
           </div>
         </div>
 
-        <div class="repair mb_60_100">
+        <div class="repair mb_60_100 position-relative">
           <div class="repair_img"><img class="w-100" src="img/design2.png" alt="Repair design"></div>
           <div class="container position-relative">
             <h4 class="design_template_title repair_title">Ремонт</h4>
           </div>
+          <div class="dashed-circle_design">
+            <svg>
+              <circle cx="50%" cy="50%" r="49%"></circle>            
+            </svg>            
+          </div>  
         </div>
 
         <div class="ordered mb_60_100">
           <div class="ordered_img"><img class="w-100" src="img/design3.png" alt="Ordered design"></div>
           <div class="container position-relative">
             <h4 class="design_template_title ordered_title">Изделия на заказ</h4>
+            <a href="#callback" class="design_arrow"><img class="h-100" src="img/arrow-down.svg" alt="Button to next section"></a>
           </div>
         </div>
+
+        
       </section>
 
-      <section class="callback position-relative">        
+      <section id="callback" class="callback position-relative">        
         <div class="container">
           
           <div class="col-12 col-lg-7">
@@ -683,6 +724,21 @@
             </div>
           </div>
         </div>
+        <div class="dashed-line_callback_white">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <line x1="0" y1="0" x2="0" y2="100%" />            
+          </svg>
+        </div>  
+        <div class="dashed-line_callback_dark">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <line x1="0" y1="0" x2="0" y2="100%" />            
+          </svg>
+        </div>  
+        <div class="dashed-circle_callback">
+          <svg>
+            <circle cx="50%" cy="50%" r="49%"></circle>            
+          </svg>            
+        </div>  
       </section>
 <!-- Footer, 1 col in mobile version, 4 cols in desktop version  -->
 

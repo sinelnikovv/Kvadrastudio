@@ -237,13 +237,31 @@
     }
     @media screen and (min-width: 768px) {
       width: 285px;
-      height: 285px;
-      
+      height: 285px;      
     }        
   }
+
+  &_big-play{
+    &::before{
+      width: 150px;
+    height: 150px;
+    background: url(img/btn_outter_dark.svg) no-repeat;
+    @media screen and (min-width: 992px) {       
+        width: 370px;
+        height: 370px;    
+        background-size: contain;    
+      }     
+    }      
+  }
+  
 }
 
 //dashed vl
+
+
+// <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid"><line x1="0" y1="0" x2="0" y2="100%" /></svg>
+                         
+            
 
 .dashed-line{
   &_portfolio{
@@ -272,10 +290,132 @@
       height: 1500px;
     }
   }
+  &_why_us{
+    @include dashed_line(500px, #999);
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    z-index: -1;
+    @media screen and (min-width: 575px) {
+      right: 50px;
+    }
+    @media screen and (min-width: 992px) {
+      right: 100px;
+    }
+    @media screen and (min-width: 1490px) {
+      right: 200px;
+    }
+  }
+
+  &_features{
+    @include dashed_line(1000px, #fff);    
+    position: absolute;
+    z-index: -1;
+    left: 12px;
+    top: 100px;
+    @media screen and (min-width: 575px) {
+      height: 1200px;      
+    }
+    @media screen and (min-width: 768px) {
+    left: 14px;     
+    }
+    @media screen and (min-width: 992px) {
+      top: -100px;
+      left: auto;
+      right: 100px;     
+    }
+    @media screen and (min-width: 1200px) {
+      height: 1600px;    
+    }    
+    @media screen and (min-width: 1490px) {
+      right: 200px;
+    }
+  }
+  &_design{
+    &_left{
+      @include dashed_line(200px, #FCFCFC);    
+      position: absolute;
+      z-index: -1;
+      left: 16px;
+      top: 250px;
+      @media screen and (min-width: 575px) {
+        top: 350px;
+      }
+      @media screen and (min-width: 992px) {
+        top: 550px;
+        left: 400px;
+      }
+      @media screen and (min-width: 1200px) {
+        top: 650px;
+        left: 400px;
+      }
+      @media screen and (min-width: 1490px) {
+        left: 600px;
+      }
+    }
+    &_right{
+      @include dashed_line(300px, #FCFCFC);    
+      position: absolute;
+      z-index: -1;
+      right: 16px;
+      top: 0px;
+      @media screen and (min-width: 992px) {
+        top: -100px;
+        height: 500px;
+      }
+    }
+  }
+  &_callback{
+    &_white{
+      @include dashed_line(400px, #fff);    
+      position: absolute;      
+      right: 40px;
+      top: 0px;
+      @media screen and (min-width: 575px) {
+        right: 120px;
+      }
+      @media screen and (min-width: 935px) {
+        height: 520px;
+      }
+      @media screen and (min-width: 992px) {
+        height: 900px;
+        right: 200px;
+      }
+      @media screen and (min-width: 1490px) {
+        height: 1200px;
+        right: 400px;
+      }
+    }
+    &_dark{
+      @include dashed_line(100px, #333);    
+      position: absolute;
+      z-index: -1;
+      right: 40px;
+      bottom: 0px;
+      @media screen and (min-width: 575px) {
+        right: 120px;
+      }
+      @media screen and (min-width: 935px) {
+        height: 500px;
+      }
+      @media screen and (min-width: 992px) {        
+        right: 200px;
+      }
+      @media screen and (min-width: 1490px) {       
+        right: 400px;
+      }
+    }
+  }
+  
+
 }
 
 
 //dashed circles
+
+
+//<svg><circle cx="50%" cy="50%" r="49%"></circle></svg>   
+
 
 .dashed-circle{  
   &_portfolio{
@@ -293,5 +433,48 @@
       top: 300px;
       right: -160px;
     }
-  }    
+  }
+  
+  &_features{
+    @include dashed_circle(rgba(255, 255, 255, 0.8));
+    top: -50px; 
+    right: 20px;
+    @media screen and (min-width: 575px) {
+      
+      right: 50px;
+    }
+    @media screen and (min-width: 992px) {
+      top: 150px;
+      right: auto;
+      left: -100px;
+    }
+    @media screen and (min-width: 1200px) {
+      top: 100px;           
+    }
+    @media screen and (min-width: 1492px) {
+      top: 180px;
+      left: -170px;   
+    }
+  }
+
+  &_design{
+    display: none;
+    @media screen and (min-width: 575px) {
+      display: block;
+      @include dashed_circle(rgba(255, 255, 255, 0.8));  
+      left: 20px; 
+      top: 50%;  
+    }
+  }
+
+  &_callback{
+    @include dashed_circle(#333); 
+    top: 70px;
+    left: 16px;
+    @media screen and (min-width: 992px) {
+      
+      left: 20px; 
+      top: 100px;  
+    }
+  }
 }

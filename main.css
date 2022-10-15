@@ -583,6 +583,18 @@ h6 {
     height: 285px;
   }
 }
+.btn_big-play::before {
+  width: 150px;
+  height: 150px;
+  background: url(img/btn_outter_dark.svg) no-repeat;
+}
+@media screen and (min-width: 992px) {
+  .btn_big-play::before {
+    width: 370px;
+    height: 370px;
+    background-size: contain;
+  }
+}
 
 .dashed-line_portfolio {
   width: 1px;
@@ -635,6 +647,267 @@ h6 {
     height: 1500px;
   }
 }
+.dashed-line_why_us {
+  width: 1px;
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  z-index: -1;
+}
+.dashed-line_why_us line {
+  stroke: #999;
+  stroke-width: 5px;
+  stroke-dasharray: 5, 5;
+  stroke-dashoffset: 100;
+  -webkit-animation: lineMove 8s linear infinite;
+          animation: lineMove 8s linear infinite;
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_why_us line {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 20, 20;
+    -webkit-animation: lineMove 25s linear infinite;
+            animation: lineMove 25s linear infinite;
+  }
+}
+@media screen and (min-width: 575px) {
+  .dashed-line_why_us {
+    right: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_why_us {
+    right: 100px;
+  }
+}
+@media screen and (min-width: 1490px) {
+  .dashed-line_why_us {
+    right: 200px;
+  }
+}
+.dashed-line_features {
+  width: 1px;
+  height: 1000px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  left: 12px;
+  top: 100px;
+}
+.dashed-line_features line {
+  stroke: #fff;
+  stroke-width: 5px;
+  stroke-dasharray: 5, 5;
+  stroke-dashoffset: 100;
+  -webkit-animation: lineMove 8s linear infinite;
+          animation: lineMove 8s linear infinite;
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_features line {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 20, 20;
+    -webkit-animation: lineMove 25s linear infinite;
+            animation: lineMove 25s linear infinite;
+  }
+}
+@media screen and (min-width: 575px) {
+  .dashed-line_features {
+    height: 1200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dashed-line_features {
+    left: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_features {
+    top: -100px;
+    left: auto;
+    right: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dashed-line_features {
+    height: 1600px;
+  }
+}
+@media screen and (min-width: 1490px) {
+  .dashed-line_features {
+    right: 200px;
+  }
+}
+.dashed-line_design_left {
+  width: 1px;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  left: 16px;
+  top: 250px;
+}
+.dashed-line_design_left line {
+  stroke: #FCFCFC;
+  stroke-width: 5px;
+  stroke-dasharray: 5, 5;
+  stroke-dashoffset: 100;
+  -webkit-animation: lineMove 8s linear infinite;
+          animation: lineMove 8s linear infinite;
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_design_left line {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 20, 20;
+    -webkit-animation: lineMove 25s linear infinite;
+            animation: lineMove 25s linear infinite;
+  }
+}
+@media screen and (min-width: 575px) {
+  .dashed-line_design_left {
+    top: 350px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_design_left {
+    top: 550px;
+    left: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dashed-line_design_left {
+    top: 650px;
+    left: 400px;
+  }
+}
+@media screen and (min-width: 1490px) {
+  .dashed-line_design_left {
+    left: 600px;
+  }
+}
+.dashed-line_design_right {
+  width: 1px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  right: 16px;
+  top: 0px;
+}
+.dashed-line_design_right line {
+  stroke: #FCFCFC;
+  stroke-width: 5px;
+  stroke-dasharray: 5, 5;
+  stroke-dashoffset: 100;
+  -webkit-animation: lineMove 8s linear infinite;
+          animation: lineMove 8s linear infinite;
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_design_right line {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 20, 20;
+    -webkit-animation: lineMove 25s linear infinite;
+            animation: lineMove 25s linear infinite;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_design_right {
+    top: -100px;
+    height: 500px;
+  }
+}
+.dashed-line_callback_white {
+  width: 1px;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  right: 40px;
+  top: 0px;
+}
+.dashed-line_callback_white line {
+  stroke: #fff;
+  stroke-width: 5px;
+  stroke-dasharray: 5, 5;
+  stroke-dashoffset: 100;
+  -webkit-animation: lineMove 8s linear infinite;
+          animation: lineMove 8s linear infinite;
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_callback_white line {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 20, 20;
+    -webkit-animation: lineMove 25s linear infinite;
+            animation: lineMove 25s linear infinite;
+  }
+}
+@media screen and (min-width: 575px) {
+  .dashed-line_callback_white {
+    right: 120px;
+  }
+}
+@media screen and (min-width: 935px) {
+  .dashed-line_callback_white {
+    height: 520px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_callback_white {
+    height: 900px;
+    right: 200px;
+  }
+}
+@media screen and (min-width: 1490px) {
+  .dashed-line_callback_white {
+    height: 1200px;
+    right: 400px;
+  }
+}
+.dashed-line_callback_dark {
+  width: 1px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  right: 40px;
+  bottom: 0px;
+}
+.dashed-line_callback_dark line {
+  stroke: #333;
+  stroke-width: 5px;
+  stroke-dasharray: 5, 5;
+  stroke-dashoffset: 100;
+  -webkit-animation: lineMove 8s linear infinite;
+          animation: lineMove 8s linear infinite;
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_callback_dark line {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 20, 20;
+    -webkit-animation: lineMove 25s linear infinite;
+            animation: lineMove 25s linear infinite;
+  }
+}
+@media screen and (min-width: 575px) {
+  .dashed-line_callback_dark {
+    right: 120px;
+  }
+}
+@media screen and (min-width: 935px) {
+  .dashed-line_callback_dark {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dashed-line_callback_dark {
+    right: 200px;
+  }
+}
+@media screen and (min-width: 1490px) {
+  .dashed-line_callback_dark {
+    right: 400px;
+  }
+}
 
 .dashed-circle_portfolio {
   position: absolute;
@@ -685,6 +958,141 @@ h6 {
     right: -160px;
   }
 }
+.dashed-circle_features {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  top: -50px;
+  right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .dashed-circle_features {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dashed-circle_features {
+    width: 370px;
+    height: 370px;
+  }
+}
+.dashed-circle_features svg {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: spin 40s linear infinite;
+          animation: spin 40s linear infinite;
+}
+.dashed-circle_features circle {
+  stroke-width: 1;
+  stroke-dasharray: 5, 5;
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.8);
+}
+@media screen and (min-width: 575px) {
+  .dashed-circle_features {
+    right: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dashed-circle_features {
+    top: 150px;
+    right: auto;
+    left: -100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dashed-circle_features {
+    top: 100px;
+  }
+}
+@media screen and (min-width: 1492px) {
+  .dashed-circle_features {
+    top: 180px;
+    left: -170px;
+  }
+}
+.dashed-circle_design {
+  display: none;
+}
+@media screen and (min-width: 575px) {
+  .dashed-circle_design {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+    left: 20px;
+    top: 50%;
+  }
+}
+@media screen and (min-width: 575px) and (min-width: 768px) {
+  .dashed-circle_design {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 575px) and (min-width: 1200px) {
+  .dashed-circle_design {
+    width: 370px;
+    height: 370px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .dashed-circle_design svg {
+    width: 100%;
+    height: 100%;
+    -webkit-animation: spin 40s linear infinite;
+            animation: spin 40s linear infinite;
+  }
+}
+@media screen and (min-width: 575px) {
+  .dashed-circle_design circle {
+    stroke-width: 1;
+    stroke-dasharray: 5, 5;
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.8);
+  }
+}
+.dashed-circle_callback {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  top: 70px;
+  left: 16px;
+}
+@media screen and (min-width: 768px) {
+  .dashed-circle_callback {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dashed-circle_callback {
+    width: 370px;
+    height: 370px;
+  }
+}
+.dashed-circle_callback svg {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: spin 40s linear infinite;
+          animation: spin 40s linear infinite;
+}
+.dashed-circle_callback circle {
+  stroke-width: 1;
+  stroke-dasharray: 5, 5;
+  fill: none;
+  stroke: #333;
+}
+@media screen and (min-width: 992px) {
+  .dashed-circle_callback {
+    left: 20px;
+    top: 100px;
+  }
+}
 
 @media screen and (min-width: 1490px) {
   .container {
@@ -732,6 +1140,29 @@ h6 {
   border: none;
   border-radius: 50%;
   background: transparent;
+}
+.btn_big-play {
+  background: #897163;
+  width: 120px;
+  height: 120px;
+  border: none;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+}
+.btn_big-play img {
+  transform: translateX(10%);
+}
+@media screen and (min-width: 992px) {
+  .btn_big-play {
+    width: 285px;
+    height: 285px;
+  }
+  .btn_big-play img {
+    width: 80px;
+  }
 }
 
 header {
@@ -1438,6 +1869,11 @@ header {
 .why_us_row {
   padding-top: 370px;
 }
+@media screen and (min-width: 992px) {
+  .why_us_row {
+    padding-top: 70px;
+  }
+}
 .why_us p {
   font-size: 32px;
   line-height: 42px;
@@ -1798,6 +2234,10 @@ header {
   color: #897163;
   border-bottom: 2px solid #897163;
 }
+.about_us_more:hover {
+  color: #897163;
+  border-bottom: 2px solid #897163;
+}
 @media screen and (min-width: 992px) {
   .about_us_more {
     font-size: 20px;
@@ -1843,6 +2283,18 @@ header {
 @media screen and (min-width: 992px) {
   .example_video_b {
     margin-bottom: 50px;
+  }
+}
+.example_arrow {
+  width: 8px;
+  height: 50px;
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+}
+@media screen and (min-width: 992px) {
+  .example_arrow {
+    height: 200px;
   }
 }
 
@@ -1958,11 +2410,10 @@ header {
     bottom: 175px;
   }
 }
-
-.ordered_img {
+.design .ordered_img {
   margin-left: 16px;
 }
-.ordered_title {
+.design .ordered_title {
   bottom: -28px;
   left: 0;
   right: 0;
@@ -1970,12 +2421,12 @@ header {
   border-left: 1px solid #FCFCFC;
 }
 @media screen and (min-width: 992px) {
-  .ordered_img {
+  .design .ordered_img {
     margin-right: 0;
     margin-left: auto;
     width: 70%;
   }
-  .ordered_title {
+  .design .ordered_title {
     bottom: 50px;
     left: 0;
     right: auto;
@@ -1983,10 +2434,30 @@ header {
   }
 }
 @media screen and (min-width: 1400px) {
-  .ordered_title {
+  .design .ordered_title {
     width: 790px;
     bottom: 175px;
     left: 0;
+  }
+}
+.design_arrow {
+  width: 8px;
+  height: 50px;
+  position: absolute;
+  right: 12px;
+  bottom: -15px;
+}
+@media screen and (min-width: 575px) {
+  .design_arrow {
+    bottom: -30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .design_arrow {
+    height: 120px;
+    right: auto;
+    left: -6px;
+    bottom: -150px;
   }
 }
 

@@ -46,6 +46,28 @@
     border-radius: 50%;
     background: transparent;
   }
+
+  &_big-play{
+    background: $primary;
+    width: 120px;
+    height: 120px;
+    border: none;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    img{
+      transform: translateX(10%);
+    }
+    @media screen and (min-width: 992px) {
+      width: 285px;
+      height: 285px;      
+      img{
+        width: 80px;
+      }
+    } 
+  }
 }
 
 header{
@@ -707,6 +729,9 @@ header{
 
   &_row{
     padding-top: 370px;
+    @media screen and (min-width: 992px) {
+      padding-top: 70px;
+    }
   }
   
   p{
@@ -788,60 +813,7 @@ header{
     width: 8px;
     height: 50px;
     
-  }
-  // .line_sm {
-  //   position: absolute;
-  //   z-index: -1;
-  //   right: 16px;
-  //   bottom: 0;
-  //   height: 200px;
-  //   @media screen and (min-width: 425px) {
-  //     top: 1800px;
-  //     height: 600px;
-  //   }
-  //   @media screen and (min-width: 556px) {
-  //     top: 2100px;
-  //     height: 600px;
-  //   }
-  
-  //   line {
-  //     stroke: #999999;
-  //     stroke-dasharray: 5, 5;
-  //     stroke-dashoffset: 82;
-  //     animation: lineMove 8s infinite linear;
-  //   }
-  // }
-  
-  // .line_bg {
-  //   position: absolute;
-  //   right: 16px;
-  
-  //   top: 0px;
-  //   height: 600px;
-  //   z-index: -1;
-  //   @media screen and (min-width: 992px) {
-  //     top: 0px;
-  //     right: 70px;
-  //     height: 600px;
-  //   }
-  //   @media screen and (min-width: 1400px) {
-  //     top: 1100px;
-  //     right: 70px;
-  //     height: 600px;
-  //   }
-  //   line {
-  //     stroke: #999999;
-  //     stroke-dasharray: 20, 20;
-  //     stroke-dashoffset: 82;
-  //     animation: lineMove 2s infinite linear;
-  //   }
-  // }
-  
-  // @keyframes lineMove {
-  //   to {
-  //     stroke-dashoffset: 0;
-  //   }
-  // }
+  }  
 }
 
 
@@ -1079,6 +1051,11 @@ header{
     text-decoration: none;
     color: $primary;
     border-bottom: 2px solid #897163;
+    &:hover{
+      color: $primary;
+      border-bottom: 2px solid #897163;
+      
+    }
     @media screen and (min-width: 992px) {   
       font-size: 20px;
     line-height: 42px;   
@@ -1086,7 +1063,7 @@ header{
   }
 }
 
-.example{
+.example{  
   @media screen and (min-width: 992px) {   
     padding-bottom: 50px;   
   }
@@ -1116,8 +1093,18 @@ header{
       @media screen and (min-width: 992px) {
         margin-bottom: 50px;
       }
+    }      
+  }
+
+  &_arrow{
+    width: 8px;
+  height: 50px;
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+    @media screen and (min-width: 992px) {
+        height: 200px;
     }
-    
   }
 
 }
@@ -1242,43 +1229,62 @@ header{
       }
     }
   }
+
+  .ordered{
+    &_img{
+      margin-left: 16px;
+    }
+    &_title{     
+      bottom: -28px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;      
+      border-left: 1px solid #FCFCFC;
+    }
+  
+    @media screen and (min-width: 992px) {
+      &_img{
+        margin-right: 0; 
+        margin-left: auto;
+        width: 70%;     
+      }
+      &_title{       
+        bottom: 50px;
+        left: 0;  
+        right: auto;        
+        border-left: 1px solid #FCFCFC;
+      }
+    }
+    @media screen and (min-width: 1400px) {
+      
+      &_title{    
+        width: 790px;        
+        bottom: 175px;
+        left: 0;          
+      }
+    }
+  }
+
+  &_arrow{
+    width: 8px;
+    height: 50px;
+    position: absolute;
+    right: 12px;
+    bottom: -15px;
+    @media screen and (min-width: 575px) {
+      bottom: -30px;    
+  }
+    @media screen and (min-width: 992px) {
+      height: 120px;
+      right: auto;
+      left: -6px;
+      bottom: -150px; 
+    }
+  }
       
 }
 
-.ordered{
-  &_img{
-    margin-left: 16px;
-  }
-  &_title{     
-    bottom: -28px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;      
-    border-left: 1px solid #FCFCFC;
-  }
 
-  @media screen and (min-width: 992px) {
-    &_img{
-      margin-right: 0; 
-      margin-left: auto;
-      width: 70%;     
-    }
-    &_title{       
-      bottom: 50px;
-      left: 0;  
-      right: auto;        
-      border-left: 1px solid #FCFCFC;
-    }
-  }
-  @media screen and (min-width: 1400px) {
-    
-    &_title{    
-      width: 790px;        
-      bottom: 175px;
-      left: 0;          
-    }
-  }
-}
 
 .callback{  
   padding: 50px 0;  
