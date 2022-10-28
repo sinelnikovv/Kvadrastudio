@@ -2464,7 +2464,7 @@ header {
 .callback {
   padding: 50px 0;
   overflow: hidden;
-  background: url(img/callback.PNG) no-repeat;
+  background: url(img/callback.png) no-repeat;
   background-position: 12px 100px;
   background-size: 100%;
 }
@@ -2698,6 +2698,9 @@ header {
   .footer_link {
     font-size: 18px;
   }
+}
+.footer_link:hover {
+  color: #897163;
 }
 .footer_btn {
   color: #FFFFFF;

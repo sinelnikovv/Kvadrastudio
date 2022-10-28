@@ -1289,7 +1289,7 @@ header{
 .callback{  
   padding: 50px 0;  
   overflow: hidden;  
-  background: url(img/callback.PNG) no-repeat;
+  background: url(img/callback.png) no-repeat;
   background-position: 12px 100px;
   background-size: 100%;
 
@@ -1469,7 +1469,10 @@ header{
     font-size: 16px;    
     @media screen and (min-width: 992px) {      
       font-size: 18px;      
-      }    
+      }  
+    &:hover{
+      color: $primary;
+    }    
   }
 
   &_btn{
